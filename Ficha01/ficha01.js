@@ -1,5 +1,5 @@
 //////////// função Nota Final ------------------------------------------------------------
-/*
+
 function finalgrade(gradeP, gradeT) {
     var grade = gradeP * 0.7 + gradeT * 0.3;
 
@@ -13,10 +13,10 @@ function finalgrade(gradeP, gradeT) {
 }
 
 finalgrade(9, 9);
-*/
+
 //////////// função Mês do ano ---------------------------------------------------------
 
-/*function Month(monthnumber) {
+function Month(monthnumber) {
     
     if (monthnumber == 1) {
         console.log('O mês que introduziu foi Janeiro');
@@ -47,11 +47,11 @@ finalgrade(9, 9);
     }
 }
 
-Month(19);*/
+Month(1);
 
 //////////// função Operador Aritmético
 
-/*function operation(number1, number2, operator) {
+function operation(number1, number2, operator) {
     
     if (operator=='+'){
         console.log('O resultado da soma é:' + (number1 + number2))
@@ -72,11 +72,11 @@ operation(2,2,'+')
 operation(2,2,'-')
 operation(2,2,'*')
 operation(2,2,'/')
-operation(2,2,'^')*/
+operation(2,2,'^')
 
 //////////// função multiplos de 5
 
-/*function multiples(){
+function multiples(){
 
     var multiples = [];
 
@@ -91,11 +91,11 @@ console.log(multiples);
 
 }
 
-multiples()*/
+multiples()
 
 //////////// função Soma dos primeiros 100 números inteiros
 
-/*function sumIntNumbers(){
+function sumIntNumbers(){
     var sum = 0;
 
     for (var i = 0; i < 101; i++){
@@ -105,11 +105,11 @@ multiples()*/
     console.log('O resultado será: ' + sum)
 }
 
-sumIntNumbers()*/
+sumIntNumbers()
 
 //////////// função Fatorial do número
 
-/*function factorial(number) {
+function factorial(number) {
     var numberLog = number
     var fatorial = 1
 
@@ -120,11 +120,11 @@ sumIntNumbers()*/
     console.log('O fatorial de ' + numberLog + ' é ' + fatorial)
 }
 
-factorial(7)*/
+factorial(7)
 
 //////////// função Máximo, Mínimo e média de um array
 
-/*function maxMinMed(array) {
+function maxMinMed(array) {
     var max = array[0]
     var min = array[0]
     var med = 0
@@ -143,4 +143,4 @@ factorial(7)*/
     console.log('O máximo é: ' + max + ', o mínimo é: ' + min + ' e a média é: ' + med)
 }
 
-maxMinMed([1, 2, 3, 4, 5, 6, 7])*/
+maxMinMed([1, 2, 3, 4, 5, 6, 7])
