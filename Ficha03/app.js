@@ -27,5 +27,14 @@ performDownload(started,update,completed)
 
 // Funções no ficheiro ArrayUtils.js
 
+console.log(arrayUtils.booleanIsEmpty([]))
+console.log(arrayUtils.numberMax([1,2,3,4]))
+console.log(arrayUtils.numberMin([1,2,3,4]))
+console.log(arrayUtils.numberAverage([1,2,3,4]))
+console.log(arrayUtils.numberIndexOf([1,2,3,4],0))
+console.log(arrayUtils.booleanIsSameLength([1,2,3,4],[1,2,3,4]))
+console.log(arrayUtils.arrayReverse([1,2,3,4]))
+console.log(arrayUtils.arraySwap([1,2,3,4],0,3))
+console.log(arrayUtils.booleanContains([1,2,3,4],3))
 console.log(arrayUtils.arrayConcatenate([1,2,3,4],[5,6,7,8]))
 
