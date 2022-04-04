@@ -143,10 +143,10 @@ var utils = {
         if (a1 != 0 || a2 != 0) {
             var concatenatedArray = [];
             for (var i = 0; i < a1.length; i++) {
-                concatenatedArray += a1[i]
+                concatenatedArray.push(a1[i]) 
             }
             for (var i = 0; i < a2.length; i++) {
-                concatenatedArray += a2[i]
+                concatenatedArray.push(a2[i]) 
             }
             return concatenatedArray
         }

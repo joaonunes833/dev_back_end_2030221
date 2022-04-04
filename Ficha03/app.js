@@ -36,6 +36,6 @@ console.log(arrayUtils.arraySubArray([]))
 console.log(arrayUtils.booleanIsSameLength([1],[]))
 console.log(arrayUtils.arrayReverse([4,3,2,1]))
 console.log(arrayUtils.arraySwap([]))
-console.log(arrayUtils.booleanContains([],0))
-console.log(arrayUtils.arrayConcatenate([],[]))
+console.log(arrayUtils.booleanContains([1,2,0,3,4,5],0))
+console.log(arrayUtils.arrayConcatenate([1,2,3,4],[5,6,7,8]))
 
