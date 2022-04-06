@@ -1,13 +1,32 @@
-var array = [];
-var push1 = function() {
-    return "Hello World"
-}
-var push2 = function() {
-    return "1,2"
-}
-var push3 = function() {
-    return ",3"
-}
-array.push(push1,push2,push3)
+function helloWorld(){
+    var array = [];
+    var arrayMessage = "";
+    
+    array.push(function (){
+        // var text = "Hello world 1,";
+        // return text;
+        return "Hello world 1,";
+    },
+    function(){
+        // var text = "2,";
+        // return text;
+        return "2,";
+    },
+    function(){
+        // var text = "3";
+        // return text;
+        return "3";
+    })
+    
+    // for (var i = 0; i < array.length; i++){
+    //     arrayMessage += array[i]();
+    // }
 
-console.log(array)
+    array.forEach(element => {
+        arrayMessage += element();
+    });
+    
+    console.log(arrayMessage)
+}
+
+helloWorld();
