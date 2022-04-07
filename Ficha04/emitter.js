@@ -4,20 +4,26 @@ class Emitter {
     }
 }
 
-Emitter.prototype.on = function(type,listener){
-    Emitter.events.on = [];
-    Emitter.events.on.push(listener);
-    Emitter.events.on.push(type);
+Emitter.prototype.on = function (type, listener) {
+    if (this.events[type] == undefined) {
+        this.events[type] = [];
+        this.events[type].push(listener);
+    }
+    else {
+        this.events[type].push(listener);
+    }
+
 }
 
-Emitter.prototype.emit = function(type){
-    Emitter.events.emit = [];
-    Emitter.events.emit.push(type);
-    Emitter.events.emit.forEach(element => {
-        console.log(element);
-    })
+Emitter.prototype.emit = function (type) {
+    if (this.events[type] != undefined) {
+        this.events[type].forEach(element => {
+            element();
+        })
+    }
+    else {
+        this.events[type] = [];
+    }
 }
 
-var emitter = new Emitter();
-emitter.emit = "tipo1";
-console.log(emitter);
+module.exports = Emitter;
