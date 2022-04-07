@@ -5,13 +5,21 @@ console.log(JSON.parse(str));
 
 var Emitter = require("./emitter");
 var app = new Emitter();
+var eventConstants = require("./configs")
 
-app.on("LOGIN",function(){
+app.on(eventConstants.events.LOGIN,function(){
     console.log("Someone has logged in.")
 });
-app.on("LOGOUT",function(){
+app.on(eventConstants.events.LOGOUT,function(){
     console.log("Someone has logged out.")
 });
+app.on(eventConstants.events.NovoEvento, function(){
+    console.log("Um novo evento foi criado.")
+});
 
-app.emit("LOGIN");
-app.emit("LOGOUT");
+app.emit(eventConstants.events.LOGIN,);
+app.emit(eventConstants.events.LOGOUT);
+app.emit(eventConstants.events.NovoEvento);
+
+
+
