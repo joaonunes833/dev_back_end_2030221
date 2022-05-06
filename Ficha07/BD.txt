@@ -1,0 +1,20 @@
+CREATE DATABASE ficha7;
+
+CREATE TABLE persons(
+id INT NOT NULL AUTO_INCREMENT,
+firstname VARCHAR(50) NULL,
+lastname VARCHAR(50) NULL,
+profession VARCHAR(50) NULL,
+age INT NULL,
+PRIMARY KEY (ID)
+);
+
+insert into ficha7.persons (firstname, lastname, profession, age) values("Joana", "Silva", "Racer", 42)
+
+{
+        "id": 2,
+        "firstname": "Joana",
+        "lastname": "Silva",
+        "profession": "Racer",
+        "age": 42
+    }
